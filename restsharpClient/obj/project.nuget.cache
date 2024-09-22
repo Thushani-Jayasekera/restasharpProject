@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "azp7fs2Jba4=",
+  "success": true,
+  "projectFilePath": "/Users/thushanij/Downloads/restasharpProject/restsharpClient/restsharpClient.csproj",
+  "expectedPackageFiles": [
+    "/Users/thushanij/.nuget/packages/restsharp/111.4.1/restsharp.111.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}

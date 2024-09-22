@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "j0t7tNN51g9Z/xqNStKpvzEoU2YDJg8WtBv1NlFCbkk=",
+  "Source": "restsharpClient",
+  "BasePath": "_content/restsharpClient",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
