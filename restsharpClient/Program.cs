@@ -36,6 +36,11 @@ public class Program
                 using (Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
                 {
                     await socket.ConnectAsync(endPoint);
+
+                    // Set keep-alive
+                    socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, true);
+                    socket.SetSocketOption(SocketOptionLevel.Tcp, SocketOptionName.TcpKeepAliveTime, 60);
+
                     using (NetworkStream networkStream = new NetworkStream(socket, false))
                     using (SslStream sslStream = new SslStream(networkStream, false, ValidateServerCertificate, null))
                     {
@@ -56,6 +61,7 @@ public class Program
 
                         retryCount++;
                     }
+                    await Task.Delay(TimeSpan.FromSeconds(60));
 
                     // Set linger option and close the socket
                     socket.LingerState = new LingerOption(true, 0);
