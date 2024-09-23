@@ -28,7 +28,9 @@ public class Program
             try
             {
                 Uri uri = new Uri(url);
+                Console.WriteLine($"Resolving host: {uri.Host}");
                 IPHostEntry hostEntry = await Dns.GetHostEntryAsync(uri.Host);
+                Console.WriteLine($"Resolved IP: {hostEntry.AddressList[0]}");
                 IPEndPoint endPoint = new IPEndPoint(hostEntry.AddressList[0], uri.Port);
 
                 using (Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
@@ -39,7 +41,7 @@ public class Program
                     {
                         await sslStream.AuthenticateAsClientAsync(uri.Host);
 
-                        string request = $"GET {uri.PathAndQuery} HTTP/1.1\r\nHost: {uri.Host}\r\nConnection: close\r\n\r\n";
+                        string request = $"GET {uri.PathAndQuery} HTTP/1.1\r\nHost: {uri.Host}\r\nConnection: keep-alive\r\n\r\n";
                         byte[] requestBytes = Encoding.ASCII.GetBytes(request);
                         await sslStream.WriteAsync(requestBytes, 0, requestBytes.Length);
 
@@ -85,5 +87,4 @@ public class Program
         return true;
     }
 }
-
 
