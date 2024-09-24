@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("restsharpClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04d40bf72475459f91be215008dd0fc9c5a2f5ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("restsharpClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("restsharpClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

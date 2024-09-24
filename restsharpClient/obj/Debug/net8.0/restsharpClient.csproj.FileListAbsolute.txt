@@ -26,3 +26,4 @@
 /Users/thushanij/Downloads/restasharpProject/restsharpClient/obj/Debug/net8.0/restsharpClient.pdb
 /Users/thushanij/Downloads/restasharpProject/restsharpClient/obj/Debug/net8.0/restsharpClient.genruntimeconfig.cache
 /Users/thushanij/Downloads/restasharpProject/restsharpClient/obj/Debug/net8.0/ref/restsharpClient.dll
+/Users/thushanij/Downloads/restasharpProject/restsharpClient/obj/Debug/net8.0/restsharpClient.sourcelink.json

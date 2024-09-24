@@ -12,7 +12,7 @@ public class Program
     public static async Task Main()
     {
 
-        const string url = "https://prod2.thuhsnaidevenv.work.gd/usproject/mediationProxyAPI/v1.0";
+        const string url = "https://dev.thushanitest.work.gd/ysxr/newapiproxy/v1.0/report";
         const int maxRetries = 3600;
         int retryCount = 0;
         bool success = false;
