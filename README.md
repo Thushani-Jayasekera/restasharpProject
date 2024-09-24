@@ -12,8 +12,6 @@ cd restsharpClient
 
 3. Build the project
 ```
-
-```
 dotnet build
 ```
 
